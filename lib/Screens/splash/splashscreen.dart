@@ -1,0 +1,35 @@
+import 'dart:async';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:whatsman/Widgets/uihelper.dart';
+import '../onboarding/onboarding.dart';
+
+class Splashscreen extends StatefulWidget{
+  @override
+  State<Splashscreen> createState() => _SplashscreenState();
+}
+
+class _SplashscreenState extends State<Splashscreen> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(Duration(seconds: 3), () {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>OnboardingScreen()));
+
+    });
+  }
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+body: Center(
+  child: Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+  Image.asset("assets/images/logo.png"),
+      SizedBox(height: 20,),
+      Uihelper.CustomText(text: "WhatsApp", height: 18,fontweight: FontWeight.bold)
+  ],),
+),
+    );
+  }
+}
