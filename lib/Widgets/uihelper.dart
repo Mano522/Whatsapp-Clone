@@ -20,7 +20,8 @@ callback();
     style: TextStyle(
       fontSize: height,
       color: color ?? Color(0XFF5E5E5E),
-      fontWeight: fontweight
+      fontWeight: fontweight,
+      fontFamily: "Regular"
     ),
     );
   }
