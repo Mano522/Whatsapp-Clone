@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsman/Screens/login/loginscreen.dart';
 import 'package:whatsman/Widgets/uihelper.dart';
-
 class OnboardingScreen extends StatelessWidget{
   @override
   Widget build(BuildContext context){
